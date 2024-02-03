@@ -15,4 +15,10 @@ public class block_physics : MonoBehaviour
     {
         
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // when the block collides with something, destroy it.
+        Destroy(this.gameObject);
+    }
 }
